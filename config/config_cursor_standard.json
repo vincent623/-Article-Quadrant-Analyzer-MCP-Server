@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "article-quadrant-analyzer": {
+      "command": "uvx",
+      "args": [
+        "--quiet",
+        "--python",
+        "3.12",
+        "--with",
+        "fastmcp",
+        "python",
+        "/Users/vincent/Library/CloudStorage/SynologyDrive-vincent/My.create/Developer/MCP/test_simple_server.py"
+      ],
+      "env": {
+        "LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}
