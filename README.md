@@ -1,13 +1,14 @@
-# 📊 Article Quadrant Analyzer MCP Server (Enhanced)
+# 📊 Article Quadrant Analyzer MCP Server (Enhanced + OCR)
 
-A powerful Model Context Protocol (MCP) server that extracts core insights from articles and generates intelligent Chinese quadrant analysis with direct text matrix visualization.
+A powerful Model Context Protocol (MCP) server that extracts core insights from articles with OCR support and generates intelligent Chinese quadrant analysis with direct text matrix visualization.
 
 ## ✨ Features
 
 - **Multi-Source Content Processing**: URLs, files, screenshots (OCR), and direct text
 - **Professional OCR**: Integration with Mistral Document AI API for high-accuracy screenshot analysis
+- **4 Powerful Tools**: Content extraction, OCR processing, insights analysis, quadrant generation
+- **Chinese Text Matrix Output**: Direct ASCII quadrant visualization in dialogue
 - **2x2 Quadrant Analysis**: Automatic generation of insightful quadrant visualizations
-- **SVG Output**: High-quality, scalable quadrant graphics
 - **Agent-Centric Design**: Optimized for AI agent workflows
 - **UVX Deployment**: Zero-dependency deployment for minimal cost
 
@@ -146,7 +147,28 @@ More configuration examples in `config/` directory.
 - Content structure analysis
 - Actionable insight generation
 
-### 3. `generate_quadrant_analysis_simple`
+### 3. `extract_text_from_image`
+**Professional OCR with Mistral Document AI API**
+
+**Advanced OCR Processing:**
+- High-accuracy text extraction from images and screenshots
+- Support for multiple image formats (PNG, JPG, WEBP)
+- Automatic language detection (Chinese/English/Mixed)
+- Mistral Document AI API integration for best results
+
+**Smart Error Handling:**
+- Graceful fallback when API key not configured
+- Detailed error messages and troubleshooting guidance
+- Image validation and preprocessing
+- Network timeout and retry logic
+
+**Input/Output Support:**
+- File paths to local images
+- Base64 encoded image data
+- Real-time confidence scoring
+- Extracted text ready for quadrant analysis
+
+### 4. `generate_quadrant_analysis_simple`
 **Enhanced Chinese quadrant analysis engine**
 
 **Smart Content Processing:**
